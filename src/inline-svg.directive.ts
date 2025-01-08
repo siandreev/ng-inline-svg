@@ -27,7 +27,8 @@ import * as SvgUtil from './svg-util';
 
 @Directive({
   selector: '[inlineSVG]',
-  providers: [SVGCacheService]
+  providers: [SVGCacheService],
+  standalone: false
 })
 export class InlineSVGDirective implements OnInit, OnChanges, OnDestroy {
   @Input() inlineSVG: string;
