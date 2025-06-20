@@ -4,7 +4,7 @@
 
 [![NPM](https://nodei.co/npm/ng-inline-svg-2.png?compact=true)](https://nodei.co/npm/ng-inline-svg-2)
 
-**[Demo](https://echeung.me/ng-inline-svg)**
+* Copperleaf fork of ng-inline-svg-2 *
 
 *Formerly called [ng-inline-svg](https://github.com/arkon/ng-inline-svg)*
 
@@ -19,7 +19,7 @@ font icons.
 ## Installation
 
 ```shell
-npm install --save ng-inline-svg-2
+npm install @copperleaf/ng-inline-svg-2
 ```
 
 

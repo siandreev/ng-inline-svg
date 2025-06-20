@@ -32,14 +32,14 @@ import * as SvgUtil from './svg-util';
 })
 export class InlineSVGDirective implements OnInit, OnChanges, OnDestroy {
   @Input() inlineSVG: string;
-  @Input() resolveSVGUrl: boolean = true;
-  @Input() replaceContents: boolean = true;
-  @Input() prepend: boolean = false;
-  @Input() injectComponent: boolean = false;
-  @Input() cacheSVG: boolean = true;
+  @Input() resolveSVGUrl = true;
+  @Input() replaceContents = true;
+  @Input() prepend = false;
+  @Input() injectComponent = false;
+  @Input() cacheSVG = true;
   @Input() setSVGAttributes: { [key: string]: any };
   @Input() removeSVGAttributes: Array<string>;
-  @Input() forceEvalStyles: boolean = false;
+  @Input() forceEvalStyles = false;
   @Input() evalScripts: SVGScriptEvalMode = SVGScriptEvalMode.ALWAYS;
   @Input() fallbackImgUrl: string;
   @Input() fallbackSVG: string;
@@ -65,7 +65,7 @@ export class InlineSVGDirective implements OnInit, OnChanges, OnDestroy {
     private _renderer: Renderer2,
     private _inlineSVGService: InlineSVGService,
     @Optional() private _config: InlineSVGConfig,
-    @Inject(PLATFORM_ID) private platformId: Object) {
+    @Inject(PLATFORM_ID) private platformId: object) {
     this._supportsSVG = SvgUtil.isSvgSupported();
 
     // Check if the browser supports embed SVGs
